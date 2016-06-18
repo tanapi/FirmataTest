@@ -1,0 +1,30 @@
+<arduinoScenario>
+    <line>
+        <command>PIN_MODE</command>
+        <parm1>13</parm1>
+        <parm2>OUT</parm2>
+    </line>
+    <line>
+        <command>DIGITAL_WRITE</command>
+        <parm1>13</parm1>
+        <parm2>ON</parm2>
+    </line>
+    <line>
+        <command>SLEEP</command>
+        <parm1>500</parm1>
+    </line>
+    <line>
+        <command>DIGITAL_WRITE</command>
+        <parm1>13</parm1>
+        <parm2>OFF</parm2>
+    </line>
+    <line>
+        <command>SLEEP</command>
+        <parm1>500</parm1>
+    </line>
+    <line>
+        <command>LOOP</command>
+        <parm1>10</parm1>
+        <parm2>1</parm2>
+    </line>
+</arduinoScenario>
