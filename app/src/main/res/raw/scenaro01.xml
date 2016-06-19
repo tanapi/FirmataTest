@@ -5,13 +5,32 @@
         <parm2>OUT</parm2>
     </line>
     <line>
+        <command>LOOP</command>
+        <parm1>5</parm1>
+    </line>
+    <line>
+        <command>SET_ADD</command>
+        <parm1>LOOP_COUNT</parm1>
+        <parm2>1</parm2>
+    </line>
+    <line>
+        <command>SET_MLT</command>
+        <parm1>ADD</parm1>
+        <parm2>100</parm2>
+    </line>
+    <line>
+        <command>SET</command>
+        <parm1>VAR1</parm1>
+        <parm2>MLT</parm2>
+    </line>
+    <line>
         <command>DIGITAL_WRITE</command>
         <parm1>13</parm1>
         <parm2>ON</parm2>
     </line>
     <line>
         <command>SLEEP</command>
-        <parm1>500</parm1>
+        <parm1>VAR1</parm1>
     </line>
     <line>
         <command>DIGITAL_WRITE</command>
@@ -20,11 +39,9 @@
     </line>
     <line>
         <command>SLEEP</command>
-        <parm1>500</parm1>
+        <parm1>VAR1</parm1>
     </line>
     <line>
-        <command>LOOP</command>
-        <parm1>10</parm1>
-        <parm2>1</parm2>
+        <command>LOOP_END</command>
     </line>
 </arduinoScenario>
